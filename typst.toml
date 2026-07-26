@@ -1,0 +1,11 @@
+[package]
+name = "tmplec"
+version = "0.0.1"
+entrypoint = "src/lib.typ"
+authors = ["Ryan Tsang"]
+description = "components for creating lecture templates"
+repository = "https://github.com/rchtsang/tmplec"
+compiler = "0.14.2"
+categories = ["components", "layout"]
+tags = ["paged"]
+
