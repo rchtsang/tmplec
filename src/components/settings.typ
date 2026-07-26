@@ -8,11 +8,9 @@
   prefix: PREFIX,
   doc: "template page settings",
   fields: (
-    e.field("paper", str, default: "presentation-16-9",
-      doc: "standard paper size"),
-    e.field("width", e.types.union(auto, length), default: auto,
+    e.field("width", e.types.union(auto, length), default: 297.0mm,
       doc: "page width"),
-    e.field("height", e.types.union(auto, length), default: auto,
+    e.field("height", e.types.union(auto, length), default: 167.0625mm,
       doc: "page height"),
     e.field("flipped", bool, default: false,
       doc: "landscape orientation"),

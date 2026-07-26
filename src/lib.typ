@@ -54,8 +54,10 @@
         Lecture #it.lec-num #if it.topic != none [ \- #it.topic ]
       ] \
       #tl-text.subtitle[#it.course] \
-      #if it.date != none [ #it.date.display() ] \
-      #if it.author.len() > 0 [ #it.author.join(", ", last: ", and ") ]
+      #if it.date != none { tl-text.subtitle[ #it.date.display() ] } \
+      #if it.author.len() > 0 {
+        tl-text.subtitle[ #it.author.join(", ", last: ", and ") ]
+      }
     ]
     let description = [
       #it.course : Lecture #it.lec-num #if it.topic != none [ \- #it.topic ]
