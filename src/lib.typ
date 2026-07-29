@@ -22,7 +22,7 @@
   fields: (
     e.field("body", content, required: true,
       doc: "document body content"),
-    e.field("lec-num", int, named: true, required: true,
+    e.field("lec-num", e.types.option(int), named: true, default: none,
       doc: "lecture number"),
     e.field("topic", e.types.option(str), named: true, default: none,
       doc: "lecture topic(s)"),
@@ -49,9 +49,12 @@
       doc: "template raw text settings"),
   ),
   display: it => {
+    assert(it.lec-num != it.topic,
+      message: "must provide at least one of 'lec-num' or 'topic'")
     let title = [
       #tl-text.title[
-        Lecture #it.lec-num #if it.topic != none [ \- #it.topic ]
+        #if it.lec-num != none [ Lecture #it.lec-num ]
+        #if it.topic != none [ \- #it.topic ]
       ] \
       #tl-text.subtitle[#it.course] \
       #if it.date != none { tl-text.subtitle[ #it.date.display() ] } \
@@ -84,6 +87,7 @@
     show heading.where(level: 1): set text(fill: oc("violet", step: 8), size: xl)
     show heading.where(level: 2): set text(fill: oc("violet", step: 8), size: lg)
     show heading.where(level: 3): set text(fill: oc("violet", step: 6), size: lg)
+    show figure.caption: set text(fill: oc("gray", step: 7), size: sm)
 
 
     std.title()
