@@ -1,11 +1,16 @@
-#import "@preview/scaffolder:0.2.1": scaffolding
+#import "@local/scaffolder:0.2.2": scaffolding, get-page-margins
 
 #import "@local/tmplec:0.0.1" as tmplec
 
+// #let margins = context get-page-margins()
+
 #let page-settings = tmplec.page-settings(
   background: scaffolding(
-    stroke: (paint: red, thickness: 1pt, cap: "round", dash: "dashed")
+    stroke: (paint: red, thickness: 1pt, cap: "round", dash: "dashed"),
   ),
+  // background: context [
+  //   Page Margins: #get-page-margins()
+  // ],
 )
 
 #show: tmplec.template.with(
@@ -27,3 +32,5 @@
 def test(param="hello"):
     print(param)
 ```
+
+// Page Margins: #margins

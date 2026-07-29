@@ -15,17 +15,4 @@
   body,
 )
 
-#let h1(..params, color: oc("violet", step: 8), body) = text(
-  size: xl,
-  fill: color,
-  ..params,
-  body,
-)
-
-#let h2(..params, color: oc("violet", step: 8), body) = text(
-  size: lg,
-  fill: color,
-  ..params,
-  body,
-)
-
+#let slidebreak(space: 5in) = v(space)

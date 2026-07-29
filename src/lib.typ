@@ -72,6 +72,7 @@
 
     set page(..e.fields(it.page-settings))
     set text(..e.fields(it.text-settings))
+
     set raw(..e.fields(it.raw-settings))
     show raw: set text(..e.fields(it.raw-text-settings))
 
@@ -79,12 +80,14 @@
     codly(..e.fields(it.codly-settings))
 
     show link: set text(fill: oc("blue", step: 8))
+    show heading: set block(below: 2em)
     show heading.where(level: 1): set text(fill: oc("violet", step: 8), size: xl)
     show heading.where(level: 2): set text(fill: oc("violet", step: 8), size: lg)
     show heading.where(level: 3): set text(fill: oc("violet", step: 6), size: lg)
 
+
     std.title()
-    std.pagebreak()
+    v(5in)
     it.body
   },
 )

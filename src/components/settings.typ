@@ -8,13 +8,14 @@
   prefix: PREFIX,
   doc: "template page settings",
   fields: (
+    /* presentation-16-9: 297.0mm x 167.0625mm */
     e.field("width", e.types.union(auto, length), default: 297.0mm,
       doc: "page width"),
-    e.field("height", e.types.union(auto, length), default: 167.0625mm,
+    e.field("height", e.types.union(auto, length), default: auto,
       doc: "page height"),
     e.field("flipped", bool, default: false,
       doc: "landscape orientation"),
-    e.field("margin", e.types.union(auto, relative, dictionary), default: (x: 0.5in, y: 0.2in),
+    e.field("margin", e.types.union(auto, relative, dictionary), default: (x: 0.5in, y: 0.5in),
       doc: "page margins"),
     e.field("bleed", e.types.union(auto, relative, dictionary), default: (:),
       doc: "page bleed margins"),
