@@ -54,7 +54,8 @@
     let title = [
       #tl-text.title[
         #if it.lec-num != none [ Lecture #it.lec-num ]
-        #if it.topic != none [ \- #it.topic ]
+        #if it.lec-num != none and it.topic != none [ \- ]
+        #if it.topic != none [ #it.topic ]
       ] \
       #tl-text.subtitle[#it.course] \
       #if it.date != none { tl-text.subtitle[ #it.date.display() ] } \
@@ -89,6 +90,8 @@
     show heading.where(level: 3): set text(fill: oc("violet", step: 6), size: lg)
     show figure.caption: set text(fill: oc("gray", step: 7), size: sm)
 
+    set enum(spacing: 1.5em)
+    set list(spacing: 1.2em)
 
     std.title()
     v(5in)
