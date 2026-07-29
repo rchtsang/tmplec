@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>gutterSettings</key>
+	<dict>
+		<key>background</key>
+		<string>#000000</string>
+		<key>divider</key>
+		<string>#292929</string>
+		<key>foreground</key>
+		<string>#F5F5F5</string>
+	</dict>
+	<key>name</key>
+	<string>Gotthard Dark</string>
+	<key>semanticClass</key>
+	<string>theme.dark.gotthard</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#000000</string>
+				<key>caret</key>
+				<string>#F5F5F5</string>
+				<key>foreground</key>
+				<string>#F5F5F5</string>
+				<key>invisibles</key>
+				<string>#191919</string>
+				<key>lineHighlight</key>
+				<string>#191919</string>
+				<key>selection</key>
+				<string>#292929</string>
+			</dict>
+		</dict>
+		<dict><key>name</key><string>Comment</string><key>scope</key><string>comment</string><key>settings</key><dict><key>foreground</key><string>#707070</string></dict></dict>
+		<dict><key>name</key><string>String</string><key>scope</key><string>string</string><key>settings</key><dict><key>foreground</key><string>#CAAB6D</string></dict></dict>
+		<dict><key>name</key><string>Number</string><key>scope</key><string>constant.numeric</string><key>settings</key><dict><key>foreground</key><string>#B89784</string></dict></dict>
+		<dict><key>name</key><string>Built-in constant</string><key>scope</key><string>constant.language</string><key>settings</key><dict><key>foreground</key><string>#AB6369</string></dict></dict>
+		<dict><key>name</key><string>User-defined constant</string><key>scope</key><string>constant.character, constant.other</string><key>settings</key><dict><key>foreground</key><string>#AB6369</string></dict></dict>
+		<dict><key>name</key><string>Keyword</string><key>scope</key><string>keyword</string><key>settings</key><dict><key>foreground</key><string>#B19DB4</string><key>fontStyle</key><string>bold</string></dict></dict>
+		<dict><key>name</key><string>Storage</string><key>scope</key><string>storage</string><key>settings</key><dict><key>fontStyle</key><string></string><key>foreground</key><string>#B19DB4</string></dict></dict>
+		<dict><key>name</key><string>Storage type</string><key>scope</key><string>storage.type</string><key>settings</key><dict><key>fontStyle</key><string>italic</string><key>foreground</key><string>#836781</string></dict></dict>
+		<dict><key>name</key><string>Class name</string><key>scope</key><string>entity.name.class</string><key>settings</key><dict><key>foreground</key><string>#CAAB6D</string></dict></dict>
+		<dict><key>name</key><string>Inherited class</string><key>scope</key><string>entity.other.inherited-class</string><key>settings</key><dict><key>fontStyle</key><string>italic </string><key>foreground</key><string>#81B19B</string></dict></dict>
+		<dict><key>name</key><string>Function name</string><key>scope</key><string>entity.name.function</string><key>settings</key><dict><key>fontStyle</key><string></string><key>foreground</key><string>#B19DB4</string></dict></dict>
+		<dict><key>name</key><string>Function argument</string><key>scope</key><string>variable.parameter</string><key>settings</key><dict><key>fontStyle</key><string>italic</string><key>foreground</key><string>#AB6369</string></dict></dict>
+		<dict><key>name</key><string>Tag name</string><key>scope</key><string>entity.name.tag</string><key>settings</key><dict><key>fontStyle</key><string></string><key>foreground</key><string>#AB6369</string></dict></dict>
+		<dict><key>name</key><string>Tag attribute</string><key>scope</key><string>entity.other.attribute-name</string><key>settings</key><dict><key>fontStyle</key><string></string><key>foreground</key><string>#B19DB4</string></dict></dict>
+		<dict><key>name</key><string>Library function</string><key>scope</key><string>support.function</string><key>settings</key><dict><key>fontStyle</key><string></string><key>foreground</key><string>#B19DB4</string></dict></dict>
+		<dict><key>name</key><string>Library constant</string><key>scope</key><string>support.constant</string><key>settings</key><dict><key>fontStyle</key><string></string><key>foreground</key><string>#AB6369</string></dict></dict>
+		<dict><key>name</key><string>Library class/type</string><key>scope</key><string>support.type, support.class</string><key>settings</key><dict><key>fontStyle</key><string>italic</string><key>foreground</key><string>#CAAB6D</string></dict></dict>
+		<dict><key>name</key><string>Invalid</string><key>scope</key><string>invalid</string><key>settings</key><dict><key>background</key><string>#AB6369</string><key>fontStyle</key><string></string><key>foreground</key><string>#F5F5F5</string></dict></dict>
+		<dict><key>name</key><string>Invalid deprecated</string><key>scope</key><string>invalid.deprecated</string><key>settings</key><dict><key>background</key><string>#292929</string><key>foreground</key><string>#F5F5F5</string></dict></dict>
+	</array>
+	<key>uuid</key>
+	<string>7D0E0DBD-0EE5-423E-B3E6-0FD380D7D01A</string>
+	<key>colorSpaceName</key>
+	<string>sRGB</string>
+	<key>author</key>
+	<string>Gotthard TextMate Theme Contributors</string>
+	<key>comment</key>
+	<string>Infimum styling with colors from https://github.com/janbiasi/vscode-gotthard-theme</string>
+</dict>
+</plist>
