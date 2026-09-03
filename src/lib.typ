@@ -11,9 +11,8 @@
   codly-settings,
   raw-settings,
 )
-
-#let PREFIX = "@local/tmplec:0.0.1"
-
+#import "components/poll.typ": *
+#import "utils.typ": PREFIX
 
 #let template = e.element.declare(
   "template",
