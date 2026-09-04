@@ -1,7 +1,7 @@
 #import "@preview/elembic:1.1.1" as e
 
 #import "text.typ": xl, lg, md, sm
-#import "../utils.typ": PREFIX
+#import "../utils.typ": PREFIX, px2len
 
 #let page-settings = e.types.declare(
   "page-settings",
@@ -9,13 +9,13 @@
   doc: "template page settings",
   fields: (
     /* presentation-16-9: 297.0mm x 167.0625mm */
-    e.field("width", e.types.union(auto, length), default: 297.0mm,
+    e.field("width", e.types.union(auto, length), default: px2len(20 * 5 * 7 + 4),
       doc: "page width"),
     e.field("height", e.types.union(auto, length), default: auto,
       doc: "page height"),
     e.field("flipped", bool, default: false,
       doc: "landscape orientation"),
-    e.field("margin", e.types.union(auto, relative, dictionary), default: (x: 0.5in, y: 0.5in),
+    e.field("margin", e.types.union(auto, relative, dictionary), default: (x: px2len(20 * 2), y: px2len(20 * 2)),
       doc: "page margins"),
     e.field("bleed", e.types.union(auto, relative, dictionary), default: (:),
       doc: "page bleed margins"),

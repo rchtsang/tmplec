@@ -93,7 +93,7 @@
     set list(spacing: 1.2em)
 
     std.title()
-    v(5in)
+    slidebreak()
     it.body
   },
 )

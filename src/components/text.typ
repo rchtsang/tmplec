@@ -1,10 +1,11 @@
+#import "../utils.typ": px2len
 #import "color.typ": oc
 
 // font sizes (from excalidraw)
-#let xl = 27pt
-#let lg = 21pt
-#let md = 15pt
-#let sm = 12pt
+#let xl = px2len(36)
+#let lg = px2len(28)
+#let md = px2len(20)
+#let sm = px2len(16)
 
 #let title(..params, body) = text(size: xl, ..params, body)
 
